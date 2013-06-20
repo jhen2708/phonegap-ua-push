@@ -1,4 +1,4 @@
-#! /bin/sh 
+#!/usr/bin/env bash 
 #
 # Licensed to the Apache Software Foundation (ASF) under one
 # or more contributor license agreements.  See the NOTICE file
@@ -17,7 +17,20 @@
 # specific language governing permissions and limitations
 # under the License.
 #
+# Valid values for "--target" (case insensitive):
+#     "iPhone (Retina 3.5-inch)" (default)
+#     "iPhone (Retina 4-inch)"
+#     "iPhone"
+#     "iPad"
+#     "iPad (Retina)"
 
-CORDOVA_PATH=$( cd "$( dirname "$0" )" && pwd -P)
+set -e
 
-tail -f "$CORDOVA_PATH/console.log"
+SIM_RUNNING=$(ps aux | grep -i "[i]Phone Simulator" | wc -l)
+if [ $SIM_RUNNING == 0 ]; then
+    echo "No emulators are running."
+    exit 1
+fi
+
+SIM_ID=`defaults read com.apple.iphonesimulator "SimulateDevice"`
+echo \"$SIM_ID\"

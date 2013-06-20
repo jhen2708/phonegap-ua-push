@@ -1,4 +1,4 @@
-#! /bin/sh 
+#!/usr/bin/env bash 
 #
 # Licensed to the Apache Software Foundation (ASF) under one
 # or more contributor license agreements.  See the NOTICE file
@@ -17,7 +17,14 @@
 # specific language governing permissions and limitations
 # under the License.
 #
+# Valid values for "--target" (case insensitive):
+#     "iPhone (Retina 3.5-inch)" (default)
+#     "iPhone (Retina 4-inch)"
+#     "iPhone"
+#     "iPad"
+#     "iPad (Retina)"
 
-CORDOVA_PATH=$( cd "$( dirname "$0" )" && pwd -P)
+set -e
 
-tail -f "$CORDOVA_PATH/console.log"
+echo 'iOS: Not able to install to device through command-line at this time.'
+exit 1

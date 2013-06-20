@@ -49,6 +49,9 @@
 		BB1A4F08165475990010D07E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1A4F07165475990010D07E /* StoreKit.framework */; };
 		BB1A4F0A165475A20010D07E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1A4F09165475A20010D07E /* Security.framework */; };
 		BB1A4F0C165475AC0010D07E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1A4F0B165475AC0010D07E /* CoreTelephony.framework */; };
+		CC85FD0D17738ED20074674F /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC85FD0C17738ED20074674F /* OpenAL.framework */; };
+		CC85FD0F17738ED80074674F /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC85FD0E17738ED80074674F /* ImageIO.framework */; };
+		CC85FD1117738EF50074674F /* libUAirship-1.4.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC85FD1017738EF50074674F /* libUAirship-1.4.0.a */; };
 		CCF94633170E24D800CF6A61 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = CCF94632170E24D800CF6A61 /* config.xml */; };
 		CCF94636170E25CC00CF6A61 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCF94635170E25CC00CF6A61 /* AssetsLibrary.framework */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
@@ -121,6 +124,9 @@
 		BB1A4F07165475990010D07E /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		BB1A4F09165475A20010D07E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		BB1A4F0B165475AC0010D07E /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		CC85FD0C17738ED20074674F /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		CC85FD0E17738ED80074674F /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		CC85FD1017738EF50074674F /* libUAirship-1.4.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libUAirship-1.4.0.a"; path = "Airship/libUAirship-1.4.0.a"; sourceTree = "<group>"; };
 		CCF94632170E24D800CF6A61 /* config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = config.xml; path = UAPhonegapSample/config.xml; sourceTree = "<group>"; };
 		CCF94635170E25CC00CF6A61 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x~iphone.png"; sourceTree = "<group>"; };
@@ -131,6 +137,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC85FD1117738EF50074674F /* libUAirship-1.4.0.a in Frameworks */,
+				CC85FD0F17738ED80074674F /* ImageIO.framework in Frameworks */,
+				CC85FD0D17738ED20074674F /* OpenAL.framework in Frameworks */,
 				CCF94636170E25CC00CF6A61 /* AssetsLibrary.framework in Frameworks */,
 				BB1A4F0C165475AC0010D07E /* CoreTelephony.framework in Frameworks */,
 				BB1A4F0A165475A20010D07E /* Security.framework in Frameworks */,
@@ -198,6 +207,9 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				CC85FD1017738EF50074674F /* libUAirship-1.4.0.a */,
+				CC85FD0E17738ED80074674F /* ImageIO.framework */,
+				CC85FD0C17738ED20074674F /* OpenAL.framework */,
 				CCF94635170E25CC00CF6A61 /* AssetsLibrary.framework */,
 				CCF94632170E24D800CF6A61 /* config.xml */,
 				301BF56E109A69640062928A /* www */,
